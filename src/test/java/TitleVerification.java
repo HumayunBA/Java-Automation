@@ -29,31 +29,13 @@ public class TitleVerification {
 
     @Test
 
-    public void clickListItem() {
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        // Navigate to Google
-        driver.get("https://www.google.com");
-
-
-
-        // Perform the search
-        WebElement searchInput = driver.findElement(By.name("twotabsearchtextbox"));
-        searchInput.sendKeys("TestNG");
-        searchInput.sendKeys(Keys.RETURN);
-
-    }
-
-    @Test
-
     public  void verifyTitle() {
 
-        driver.get("https://www.guru99.com");
+        driver.get("https://automationexercise.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Meet Guru99 – Free Training Tutorials & Video for IT Courses";
+        String expectedTitle = "Automation Exercise";
         Assert.assertEquals(actualTitle, expectedTitle);
 
     }

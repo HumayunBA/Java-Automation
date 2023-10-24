@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class KeywordsSearchTest {
+public class KeywordsSearch {
     private WebDriver driver;
     private WebDriverWait wait;
 
