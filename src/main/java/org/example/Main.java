@@ -13,7 +13,7 @@ public class Main {
 
     public static void hi() {
 
-        System.out.println("Java QA Test Automation");
+        System.out.println("Java QA Test Automation Project");
 
     }
 
